@@ -22,6 +22,7 @@ app.use(express.static("public"));
 mongoose.connect(process.env.MONGO_DB_URI, {
   useNewUrlParser: true,
   uri_decode_auth: true,
+  useUnifiedTopology: true,
 });
 
 const postSchema = {
